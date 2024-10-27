@@ -1,0 +1,12 @@
+{{#Question}}
+
+<div class="Flashcard">
+
+		{{Question}}
+		</p>
+		<hr>
+		<p><b><div style='color:Red  '>Description</div></b> 
+		
+</div>
+
+{{/Question}}
