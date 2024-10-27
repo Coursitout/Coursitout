@@ -1,0 +1,41 @@
+{{#Question}}
+
+<div class="Flashcard">
+
+		{{Question}}
+		</p>
+		<hr>
+		<b><p><div style='color:Green  '>{{Réponse}}</div></b>
+		
+
+{{#Image}}
+<div class="Image">
+{{#Image}}<img src="{{text:Image}}">{{/Image}}
+</div>
+{{/Image}}
+		
+</div>
+
+{{/Question}}
+
+<div class="Informations">
+
+{{#Trivia}}
+<div class="Trivia">
+{{Trivia}}
+</div>
+{{/Trivia}}
+
+{{#Obsidian}}
+<div class="Obsidian">
+{{Obsidian}}
+</div>
+{{/Obsidian}}
+
+{{#Mnemonic}}
+<div class="Mnemonic">
+{{Mnemonic}}
+</div>
+{{/Mnemonic}}
+
+</div>
