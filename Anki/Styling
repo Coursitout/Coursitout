@@ -1,0 +1,176 @@
+/* Global styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 15px;
+}
+
+/* Common styles for all card elements */
+.Flashcard,
+.Informations,
+.Trivia,
+.Obsidian,
+.TTS {
+  width: 100%;
+  max-width: 800px;
+  margin: 12px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Flashcard styles */
+.Flashcard {
+  background-color: #ffffff;
+  padding: 16px;
+  text-align: center;
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+.Flashcard .title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.Flashcard .content {
+  font-weight: normal;
+}
+
+/* Information styles */
+.Informations {
+  background-color: #ecf0f1;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #34495e;
+  border: 1px solid #bdc3c7;
+}
+
+/* Trivia styles */
+.Trivia {
+  background-color: #e8f6fd;
+  border: 1px solid #3498db;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #2980b9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.Trivia::before {
+  content: "💡";
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Image styles */
+.Image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 12px auto;
+  overflow: hidden;
+}
+
+.Image img {
+  display: block;
+  max-width: 100%;
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Obsidian styles */
+.Obsidian {
+  background-color: #f3e5f5;
+  border: 1px solid #9c27b0;
+  padding: 12px 16px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.Obsidian a {
+  color: #6200ea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.Obsidian a:hover, .Obsidian a:focus {
+  color: #3700b3;
+  text-decoration: underline;
+}
+
+/* TTS styles */
+.TTS {
+  background-color: #e8f5e9;
+  border: 1px solid #4caf50;
+  padding: 12px 16px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.TTS audio {
+  margin-bottom: 10px;
+}
+
+.TTS a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.TTS a:hover, .TTS a:focus {
+  color: #1b5e20;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .Flashcard,
+  .Informations,
+  .Trivia,
+  .Obsidian,
+  .TTS {
+    padding: 12px;
+    margin: 10px auto;
+  }
+
+  .Flashcard {
+    font-size: 18px;
+  }
+
+  .Informations,
+  .Trivia,
+  .Obsidian,
+  .TTS {
+    font-size: 14px;
+  }
+
+  .Image {
+    margin: 10px auto;
+  }
+}
