@@ -1,7 +1,10 @@
-Write the following note for Obsidian. 
+Write the following note for Obsidian following the template below.
+
 In the header: Flashcards tag is necessary. Aliases are other ways to spell the given words. Add backlinks corresponding to Wikipedia articles. The location must be the place of birth if it's a person. 
+
 Explain the topic in a short and simple way, then add a chronology of related events.
-Flashcard must be short and written in French. Flashcard definition mustn't exceed one sentence. Information in each field of the flashcard should be unique and not be repeated between fields. Date must be linked to the Event in the Flashcard. If no date or event are relevant then add add something else but keep the name of the fields. If the note is about a person, the dates must be about his birth and death. Format your answer using Markdown and Latex. 
+
+Write 5 flashcards. The flashcards must be short and written in French. Format your answer using Markdown and Latex. Use the 20 Twenty rules of formulating knowledge from Supermemo available here https://www.supermemo.com/en/blog/twenty-rules-of-formulating-knowledge. The questions should always specify the context for better clarity. Quetions must have specific and unambiguous answers. 
 
 Template: 
 ---
@@ -24,7 +27,6 @@ backlinks:
   - "[[Crossing the Rubicon]]"
   - "[[Battle of Pharsalus]]"
   - "[[Roman Republic]]"
-  - "[[Roman Empire]]"
   - "[[Ides of March]]"
   - "[[Pompey the Great]]"
   - "[[Cleopatra VII]]"
@@ -32,14 +34,16 @@ backlinks:
 location:
   - 41.9028
   - 12.4964
+
 ---
-> [!wikipedia]+ Wikipedia
+
+> [!wikipedia]+ [Wikipedia](https://en.wikipedia.org/wiki/Julius_Caesar)
 > <iframe width="100%" height="1000" frameBorder="0" src="https://en.m.wikipedia.org/wiki/Julius_Caesar"></iframe>
 
-> [!summary]+ Summary
-> **Julius Caesar** (100 BC-44 BC) was a **Roman military and political leader** who played a critical role in the **transformation of the Roman Republic** into the **Roman Empire**. Born in Rome, Caesar was a skilled military commander and politician, who conquered **Gaul** and expanded Rome's territory. His crossing of the **Rubicon River** in **49 BC** marked the start of a **civil war** that ultimately led to the end of the Roman Republic. Caesar became the **dictator of Rome** in **44 BC**, but his rule was short-lived as he was **assassinated** by a group of senators on the **Ides of March** (March 15) in the same year.
+> [!summary]- Summary
+> **Julius Caesar** (100 BC-44 BC) was a **Roman military and political leader** who played a critical role in the **transformation of the Roman Republic** into the **Roman Empire** in the 1<sup>st</sup> century BC. Born in Rome, Caesar was a skilled military commander and politician, who conquered **Gaul** and expanded Rome's territory. His crossing of the **Rubicon River** in **49 BC** marked the start of a **civil war** that ultimately led to the end of the Roman Republic. Caesar became the **dictator of Rome** in **44 BC**, but his rule was short-lived as he was **assassinated** by a group of senators on the **Ides of March** (March 15) in the same year.
 
-> [!Example]+ Chronology
+> [!chronology]+ Chronology
 > 
 > | Year | Event | Description |
 > |------|-------|-------------|
@@ -57,15 +61,9 @@ location:
 > [!quote]+ Quote  
 > « I came, I saw, I conquered. » Julius Caesar
 
-> [!flashcard]- Flashcard
+> [!flashcard]- Title of the question
 START
-Obsidian
-Name: Jules César
-Description: Leader militaire et politique romain qui a joué un rôle crucial dans la transformation de la République romaine en Empire romain et qui a été assassiné aux Ides de Mars.
-Event: Date de naissance et de décès
-Date: 100 – 44 av. J.-C.
-Trivia: Célèbre pour sa phrase « *Veni, vidi, vici* » après une victoire rapide et décisive à la Bataille de Zela.
-Version: 23.12
+Obsidian - Question
+Question: 
+Réponse:
 END
-
-Make a note for: 
