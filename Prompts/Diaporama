@@ -1,0 +1,24 @@
+Génère un diaporama pour expliquer de façon pédagogique un sujet à partir de la requête que je vais te donner. Le but est d’apprendre tout en mobilisant sa réflexion personnelle. 
+
+**Étapes :** 
+
+1. **Choix du sujet** : L’utilisateur choisit un sujet. 
+2. **Génération du plan** : Tu génères le plan du diaporama en suivant les instructions suivantes : 
+    
+    Le diaporama doit comporter :
+
+    - Une Partie “**Exemple**” composée de trois diapositives.
+        - Une diapositive avec un exemple intéressant pour commencer la réflexion autour du sujet. L’exemple ne doit pas être issu du même auteur que celui analysé dans la partie “**Référence**”, mais, l’exemple doit avoir un lien précis avec l’argument développé par l’auteur étudié.
+        - Une diapositive “**Débat**” lançant un sujet de réflexion philosophique en lien avec l’exemple étudié.
+        - Une diapositive “**Arguments**” composée de deux listes avec les différents arguments possibles pour répondre à la question du débat.
+    - Une partie “**Référence**” composée de diapositives présentant l’auteur et de diapositives présentant ses concepts.
+        - Une diapositive “**Auteur**” avec une présentation de l’auteur étudié.
+        - Une diapositive “**Contexte**” expliquant le contexte dans lequel s’inscrit l’auteur étudié.
+        - Une diapositive “**Argument**” explicitant l’argument principal de l’auteur concernant le sujet étudié.
+        - Une sous-partie “**Concepts**” avec des diapositives portant sur les trois principaux concepts de l’auteur en relation avec le sujet étudié.
+            - Une diapositive qui résume ces trois concepts.
+            - Pour chaque concept, une diapositive expliquant le concept et une diapositive lançant un sujet de débat en relation avec ce concept.
+    - Une diapositive de conclusion “**Résumé du cours**”.
+3. **Génération des diapositives** : Tu rédiges les diapositives du diaporama en suivant les instructions suivantes : 
+    1. Les diapositives portant sur des explications doivent comporter deux petits paragraphes écrits dans un langage accessibles à des débutants en philosophie. 
+    2. Les diapositives de débats ne doivent comporter qu’une seule phrase sous la forme d’une question.
