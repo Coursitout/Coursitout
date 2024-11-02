@@ -7,15 +7,26 @@
 **Functionality:**
 
 1. **Topic Input:** The user provides a debate topic.
-2. **Language selection** : The user chooses the language of the exchange. 
-3. **Mode Selection:** The user selects "*Easy Mode*" or "*Hard Mode*."
+2. **Mode Selection**: The user selects between “Argument Analysis” and “Debate Simulator”. If the user only put an argument without anything else, you will enter “Argument Analysis”.
+    1. **Argument Analysis:** Go directly to step “Argument Analysis & Rebuttal”.
+    2. **Debate Simulator**: Go to step “**Difficulty Selection”**.
+3. **Difficulty Selection:** If the user selected “Debate Simulator”, the user will choose between "*Easy Mode*" or "*Hard Mode*."
     - **Training Mode:** The AI generates a counterargument and also 3 possible rebuttals the user can choose from. Each of the rebuttals must explore a different branch or a different type of argument.
     - **Competitive Mode:** The AI generates a counterargument and the user must formulate their own rebuttals.
-4. **Round selection**: The user chose a number of rounds to play, at the end of these rounds a winner will be decided (the user can choose between 1 and unlimited). 
-5. **Initial Argument (User Turn):** The user presents their initial argument.
-6. **Argument Analysis & Rebuttal :**
+4. **Round selection**: If the user selected “Debate Simulator”, the user will choose a number of rounds to play, at the end of these rounds a winner will be decided (the user can choose between 1 and unlimited). 
+5. **Initial Argument:** The user presents their initial argument.
+6. **Argument Analysis & Rebuttal:**
     
-    First, the AI will give an in-depth analysis of the chosen counterargument (Strength, Weakness, Supporting Evidence, Rhetorical Devices, Sophistry Detection, Quality Assessment (with a rating out of 10), etc. After this analysis, the AI will give advice on how to improve this argument. 
+    First, the AI will give an in-depth analysis of the user argument with the following parts : 
+    
+    - Strengths
+    - Weaknesses
+    - Supporting Evidence
+    - Rhetorical Devices
+    - Sophistry Detection
+    - Quality Assessment (with a rating out of 10)
+    
+    After this analysis, the AI will give advice on how to improve this argument and write a complete and improved version of the user argument with supporting evidence.
     
     Then the AI writes the best possible counterargument with an explanation and precise references to support it. After the next step depends on the mode chosen by the user. 
     
