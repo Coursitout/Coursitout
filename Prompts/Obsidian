@@ -1,74 +1,125 @@
+### Enhanced Prompt for Generating Structured Notes in Obsidian
+
+You are an AI assistant tasked with generating a structured note in Obsidian on a given topic. The note should follow the template and requirements outlined below, incorporating specific formatting, tagging, and flashcard creation standards. Ensure that backlinks (links to related Wikipedia articles) are only inserted in the **Summary** and **Chronology** sections, where relevant, and match the exact names of their corresponding Wikipedia pages. Avoid placing backlinks in the YAML header. 
+
+### Instructions:
+
+1. **YAML Header**: Start the note with a YAML header containing specific metadata.  
+   - **Aliases**: List alternative names, spellings, or translations of the topic. For example, if the topic is a historical figure, include full name, common nicknames, titles, and their translation in French.  
+   - **Tags**: Add the following tags as relevant:  
+     - Mandatory tag: `Flashcards`  
+     - Additional tags (e.g., `Person`, `History`, `Geography`) based on the topic’s category or significance.  
+   - **Location**: If applicable, include the geographic coordinates (latitude and longitude) of the topic’s birthplace or a related location.  
+
+2. **Wikipedia Link**: Embed a collapsible section with a link to the topic’s relevant Wikipedia page for quick reference. This section should display an iframe of the page within Obsidian.  
+
+3. **Summary**:  
+   Write a concise overview of the topic (3-5 sentences).  
+   - Explain its significance and main context.  
+   - Use backlinks to Wikipedia pages when referencing related events, people, or concepts (e.g., *"The **[[Maryland Campaign]]** (September 1862) was a pivotal moment in the **[[American Civil War]]**."*).  
+   - Ensure backlinks match the exact titles of their Wikipedia articles.  
+
+4. **Chronology**:  
+   Create a timeline table listing the most critical events related to the topic. Each event should include:  
+   - **Year**: Use BCE/CE notation for historical events.  
+   - **Event Name**: Write a short and descriptive title for the event.  
+   - **Description**: Explain the event’s significance in 1–2 sentences.  
+   - Use backlinks within the event descriptions where relevant (e.g., *"In 1804, the **[[Coronation of Napoleon]]** established him as Emperor of the **[[First French Empire]]**."*).  
+
+5. **Flashcards**:  
+   Generate 5 flashcards in **French** based on the topic. Each flashcard should test a specific fact, event, or detail. Follow the **20 rules of formulating knowledge** from SuperMemo, ensuring:  
+   - Clear and unambiguous questions.  
+   - Simple answers with no overlap between flashcards.  
+   - Format flashcards in Markdown and use LaTeX for any special formatting (e.g., dates, symbols).  
+
+   **Flashcard Structure**:  
+   - **Title**: Describe the flashcard’s focus (e.g., “Naissance de Napoléon”).  
+   - **Question**: Clearly formulated question in French.  
+   - **Answer**: Precise answer in French.  
+
+---
+
+### Template Example
+
+**Please format the note as follows:**
+
+```markdown
 ---
 aliases:
-  - Maryland Campaign
-  - Campagne du Maryland
-  - Invasion du Maryland
+  - [List alternative names or translations]
 tags:
   - Flashcards
-  - History
-  - Military
+  - [Additional relevant tags]
 location:
-  - 39.415833
-  - -77.412222
+  - [Latitude]
+  - [Longitude]
 
 ---
 
-> [!wikipedia]+ [Wikipedia](<https://en.wikipedia.org/wiki/Maryland_Campaign>)
-> <iframe width="100%" height="1000" frameBorder="0" src="https://en.m.wikipedia.org/wiki/Maryland_Campaign"></iframe>
+> [!wikipedia]+ [Wikipedia](<https://en.wikipedia.org/wiki/[Topic]>)
+> <iframe width="100%" height="1000" frameBorder="0" src="<https://en.m.wikipedia.org/wiki/[Topic]>"></iframe>
 
 > [!summary]- Summary
-> The **[[Maryland Campaign]]** (September 1862) was a critical Confederate military operation during the **[[American Civil War]]**, led by General **[[Robert E. Lee]]**. It marked the first Confederate invasion of the North and aimed to influence foreign recognition, gather supplies, and sway Maryland to join the Confederacy. The campaign culminated in the **[[Battle of Antietam]]**, the bloodiest single-day battle in U.S. history, which led to a tactical stalemate but a strategic Union victory. President **[[Abraham Lincoln]]** used this opportunity to issue the preliminary **[[Emancipation Proclamation]]**.
+> **[Topic]**: [Brief summary of the topic, including backlinks to relevant Wikipedia articles.]
+> Example: The **[[Maryland Campaign]]** (September 1862) was a significant military operation during the **[[American Civil War]]**, culminating in the **[[Battle of Antietam]]**, one of the bloodiest battles in U.S. history.
 
 > [!chronology]+ Chronology
 >
-> | Year  | Event                             | Description                                                                                              |
-> |-------|-----------------------------------|----------------------------------------------------------------------------------------------------------|
-> | 1862  | **[[Robert E. Lee]] Crosses the Potomac** | Lee leads the Army of Northern Virginia across the Potomac River, beginning the Maryland Campaign.         |
-> | 1862  | **Special Order 191 Lost**        | Lee's orders outlining his campaign strategy are lost and later discovered by Union forces.               |
-> | 1862  | **[[Battle of South Mountain]]**  | Union forces engage Confederate troops, delaying their advance.                                           |
-> | 1862  | **[[Battle of Harpers Ferry]]**   | Confederate forces capture the Union garrison at Harpers Ferry, securing a key supply point.              |
-> | 1862  | **[[Battle of Antietam]]**        | The campaign culminates in this battle, resulting in the bloodiest single day in American history.        |
-> | 1862  | **Lee Retreats to Virginia**      | After the battle, Lee's forces withdraw, ending the campaign without achieving their strategic goals.     |
+> | Year | Event | Description |
+> |------|-------|-------------|
+> | 1862 | **[[Battle of Antietam]]** | Marked as the bloodiest single-day battle in the **[[American Civil War]]**. |
+> | 1804 | **[[Coronation of Napoleon]]** | Napoleon became Emperor of the **[[First French Empire]]**, solidifying his control over France. |
 
 > [!trivia]+ Trivia
 > **Interesting Fact**  
-> During the Maryland Campaign, General Lee divided his forces into smaller units, a risky strategy that was exposed when Special Order 191 was lost and discovered by Union troops.
+> Provide a notable or lesser-known fact about the topic, such as a famous quote, historical anecdote, or cultural reference.
 
 > [!quote]+ Quote
-> "If I save this army now, I tell you plainly that I owe no thanks to you or to any other person in Washington. You have done your best to sacrifice this army."  
-> — **George B. McClellan**, addressing his frustrations with Union leadership after the Maryland Campaign.
+> Include a famous quote from or about the topic, if applicable.
 
-> [!flashcard]- Début de la Campagne du Maryland
+> [!flashcard]- Naissance de Napoléon
 START
 Obsidian - Question
-Question: En quelle année a commencé la campagne du Maryland ?
-Réponse: En 1862
+Question: En quelle année Napoléon est-il né ?
+Réponse: Napoléon est né en 1769
 END
 
-> [!flashcard]- Bataille la plus sanglante
+> [!flashcard]- Bataille de Waterloo
 START
 Obsidian - Question
-Question: Quelle bataille de la campagne du Maryland est considérée comme la plus sanglante de l'histoire des États-Unis en une seule journée ?
-Réponse: La bataille d'Antietam
+Question: Quelle bataille marqua la fin du règne de Napoléon ?
+Réponse: La bataille de Waterloo
 END
 
-> [!flashcard]- Ordre spécial 191
+> [!flashcard]- Sacre de Napoléon
 START
 Obsidian - Question
-Question: Quel document stratégique perdu a été découvert par les forces de l'Union pendant la campagne du Maryland ?
-Réponse: L'Ordre spécial 191
+Question: Où Napoléon a-t-il été sacré empereur ?
+Réponse: À Notre-Dame de Paris
 END
 
-> [!flashcard]- Objectifs de Lee
+> [!flashcard]- Premier Empire français
 START
 Obsidian - Question
-Question: Quels étaient les objectifs principaux de Robert E. Lee pendant la campagne du Maryland ? 
-Réponse: Influencer la reconnaissance étrangère, obtenir des provisions, et convaincre le Maryland de rejoindre la Confédération.
+Question: Quel empire Napoléon a-t-il fondé ?
+Réponse: Le Premier Empire français
 END
 
-> [!flashcard]- Retraite de Lee
+> [!flashcard]- Début de la campagne de Russie
 START
 Obsidian - Question
-Question: Où l'armée de Lee s'est-elle retirée après la campagne du Maryland ?
-Réponse: En Virginie
+Question: Quelle année marque le début de la campagne de Russie par Napoléon ?
+Réponse: 1812
 END
+```
+
+---
+
+### Additional Considerations:
+
+- **Ensure Accurate Backlinks**: Only link Wikipedia articles in the Summary and Chronology sections when relevant, and ensure the linked text exactly matches the Wikipedia page title.  
+- **Clarity and Consistency**: Maintain logical organization throughout the note, ensuring timelines, summaries, and flashcards are consistent with historical sources.  
+- **SuperMemo Principles**: Flashcards should follow SuperMemo's best practices, focusing on clarity and simplicity.  
+- **Language Precision**: All flashcard content must be in French, with correct syntax and vocabulary.
+
+By following these guidelines, you’ll produce a comprehensive, structured note suitable for both quick reference and study in Obsidian.
