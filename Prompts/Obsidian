@@ -1,52 +1,58 @@
-### Enhanced Prompt for Generating Structured Notes in Obsidian
+### Enhanced Prompt for Generating Structured Notes in Obsidian with Backlinks in French Flashcards
 
-You are an AI assistant tasked with generating a structured note in Obsidian on a given topic. The note should follow the template and requirements outlined below, incorporating specific formatting, tagging, and flashcard creation standards. Ensure that backlinks (links to related Wikipedia articles) are only inserted in the **Summary** and **Chronology** sections, where relevant, and match the exact names of their corresponding Wikipedia pages. Avoid placing backlinks in the YAML header. 
+You are an AI assistant tasked with generating a structured note in Obsidian on a given topic. The note should follow the detailed template and requirements outlined below. Ensure that backlinks to relevant Wikipedia pages are included in the **Summary**, **Chronology**, and **Flashcards** sections. All sections except for the **Flashcards** must be written in **English**. Flashcards should be written in **French**, incorporating the proper backlink format when necessary (`[[Page Name|Displayed Text]]`).
+
+---
 
 ### Instructions:
 
-1. **YAML Header**: Start the note with a YAML header containing specific metadata.  
-   - **Aliases**: List alternative names, spellings, or translations of the topic. For example, if the topic is a historical figure, include full name, common nicknames, titles, and their translation in French.  
-   - **Tags**: Add the following tags as relevant:  
-     - Mandatory tag: `Flashcards`  
-     - Additional tags (e.g., `Person`, `History`, `Geography`) based on the topic’s category or significance.  
-   - **Location**: If applicable, include the geographic coordinates (latitude and longitude) of the topic’s birthplace or a related location.  
+1. **YAML Header**: Begin the note with a YAML header containing the following metadata:
+   - **Aliases**: Provide alternative names, spellings, and translations of the topic (include a French translation).
+   - **Tags**:  
+     - Mandatory: `Flashcards`  
+     - Additional relevant tags (e.g., `Person`, `History`, `Event`).  
+   - **Location**: Include geographic coordinates (latitude and longitude) if applicable.
 
-2. **Wikipedia Link**: Embed a collapsible section with a link to the topic’s relevant Wikipedia page for quick reference. This section should display an iframe of the page within Obsidian.  
+2. **Wikipedia Link**:  
+   Embed a collapsible section containing a link to the topic’s Wikipedia page. Use an iframe to allow direct viewing within Obsidian.
 
-3. **Summary**:  
-   Write a concise overview of the topic (3-5 sentences).  
-   - Explain its significance and main context.  
-   - Use backlinks to Wikipedia pages when referencing related events, people, or concepts (e.g., *"The **[[Maryland Campaign]]** (September 1862) was a pivotal moment in the **[[American Civil War]]**."*).  
-   - Ensure backlinks match the exact titles of their Wikipedia articles.  
+3. **Summary** (in **English**):  
+   Provide a concise 3-5 sentence overview of the topic.  
+   - Explain its historical, cultural, or thematic significance.  
+   - Include backlinks to relevant Wikipedia pages in natural, contextual ways (e.g., *"The **[[Maryland Campaign]]** (September 1862) was a pivotal series of battles during the **[[American Civil War]]**, concluding with the **[[Battle of Antietam]]**, the bloodiest single day in American history."*).
 
-4. **Chronology**:  
-   Create a timeline table listing the most critical events related to the topic. Each event should include:  
-   - **Year**: Use BCE/CE notation for historical events.  
-   - **Event Name**: Write a short and descriptive title for the event.  
-   - **Description**: Explain the event’s significance in 1–2 sentences.  
-   - Use backlinks within the event descriptions where relevant (e.g., *"In 1804, the **[[Coronation of Napoleon]]** established him as Emperor of the **[[First French Empire]]**."*).  
+4. **Chronology** (in **English**):  
+   Create a timeline table listing major events related to the topic. Each entry should include:  
+   - **Year**: Use BCE/CE notation.  
+   - **Event Name**: Provide a concise title.  
+   - **Description**: Explain the event’s significance in 1–2 sentences, incorporating backlinks where relevant (e.g., *“In 1804, **[[Napoleon Bonaparte|Napoleon]]** crowned himself Emperor of the **[[First French Empire]]** at [[Notre-Dame de Paris]].”*).
 
-5. **Flashcards**:  
-   Generate 5 flashcards in **French** based on the topic. Each flashcard should test a specific fact, event, or detail. Follow the **20 rules of formulating knowledge** from SuperMemo, ensuring:  
-   - Clear and unambiguous questions.  
-   - Simple answers with no overlap between flashcards.  
-   - Format flashcards in Markdown and use LaTeX for any special formatting (e.g., dates, symbols).  
+5. **Trivia** (in **English**):  
+   Add an interesting fact or lesser-known detail related to the topic (e.g., a notable anecdote, cultural reference, or surprising statistic).
+
+6. **Quote** (in **English**):  
+   Provide a famous quote related to the topic, if applicable. This could be a quote by or about the person, event, or concept being discussed.
+
+7. **Flashcards** (in **French**):  
+   Generate 5 **French** flashcards that test the reader’s knowledge of the topic.  
+   - Incorporate backlinks formatted as `[[Page Name|Displayed Text]]` when the linked text in French differs from the English Wikipedia page title.  
+   - Follow **SuperMemo’s 20 rules of formulating knowledge** to ensure clarity and avoid ambiguity.
 
    **Flashcard Structure**:  
-   - **Title**: Describe the flashcard’s focus (e.g., “Naissance de Napoléon”).  
-   - **Question**: Clearly formulated question in French.  
-   - **Answer**: Precise answer in French.  
+   - **Title**: Briefly describe the flashcard’s focus (e.g., “Sacre de Napoléon”).  
+   - **Question**: Write a clear, specific question in French, including backlinks.  
+   - **Answer**: Provide a precise answer in French, using backlinks where necessary.
 
 ---
 
 ### Template Example
 
-**Please format the note as follows:**
+**Format the note as follows:**
 
 ```markdown
 ---
 aliases:
-  - [List alternative names or translations]
+  - [List alternative names or translations, including French]
 tags:
   - Flashcards
   - [Additional relevant tags]
@@ -57,59 +63,59 @@ location:
 ---
 
 > [!wikipedia]+ [Wikipedia](<https://en.wikipedia.org/wiki/[Topic]>)
-> <iframe width="100%" height="1000" frameBorder="0" src="<https://en.m.wikipedia.org/wiki/[Topic]>"></iframe>
+> <iframe width="100%" height="1000" frameBorder="0" src="https://en.m.wikipedia.org/wiki/[Topic]"></iframe>
 
-> [!summary]- Summary
-> **[Topic]**: [Brief summary of the topic, including backlinks to relevant Wikipedia articles.]
-> Example: The **[[Maryland Campaign]]** (September 1862) was a significant military operation during the **[[American Civil War]]**, culminating in the **[[Battle of Antietam]]**, one of the bloodiest battles in U.S. history.
+> [!summary]+ Summary
+> **[Topic]**: [Brief summary in English with relevant backlinks.]  
+> Example: The **[[Maryland Campaign]]** (September 1862) was a pivotal series of battles during the **[[American Civil War]]**, culminating in the **[[Battle of Antietam]]**, the bloodiest single day in American history.
 
 > [!chronology]+ Chronology
 >
 > | Year | Event | Description |
 > |------|-------|-------------|
-> | 1862 | **[[Battle of Antietam]]** | Marked as the bloodiest single-day battle in the **[[American Civil War]]**. |
-> | 1804 | **[[Coronation of Napoleon]]** | Napoleon became Emperor of the **[[First French Empire]]**, solidifying his control over France. |
+> | 1862 CE | **[[Battle of Antietam]]** | The bloodiest single-day battle in the **[[American Civil War]]**, resulting in over 22,000 casualties. |
+> | 1804 CE | **[[Coronation of Napoleon]]** | [[Napoleon Bonaparte|Napoleon]] crowned himself Emperor of the **[[First French Empire]]** at [[Notre-Dame de Paris]]. |
 
 > [!trivia]+ Trivia
 > **Interesting Fact**  
-> Provide a notable or lesser-known fact about the topic, such as a famous quote, historical anecdote, or cultural reference.
+> Napoleon’s coronation was unique as he placed the crown on his own head, symbolizing that his authority was self-derived, not granted by the Pope.
 
 > [!quote]+ Quote
-> Include a famous quote from or about the topic, if applicable.
+> "A soldier will fight long and hard for a bit of colored ribbon." – **[[Napoleon Bonaparte]]**
 
-> [!flashcard]- Naissance de Napoléon
+> [!flashcard]- Premier Empire français
 START
 Obsidian - Question
-Question: En quelle année Napoléon est-il né ?
-Réponse: Napoléon est né en 1769
-END
-
-> [!flashcard]- Bataille de Waterloo
-START
-Obsidian - Question
-Question: Quelle bataille marqua la fin du règne de Napoléon ?
-Réponse: La bataille de Waterloo
+Question: Quel empire [[Napoleon Bonaparte|Napoléon]] a-t-il fondé ?
+Réponse: Le [[First French Empire|Premier Empire français]]
 END
 
 > [!flashcard]- Sacre de Napoléon
 START
 Obsidian - Question
-Question: Où Napoléon a-t-il été sacré empereur ?
-Réponse: À Notre-Dame de Paris
+Question: Où [[Napoleon Bonaparte|Napoléon]] a-t-il été sacré empereur ?
+Réponse: À [[Notre-Dame de Paris]]
 END
 
-> [!flashcard]- Premier Empire français
+> [!flashcard]- Bataille décisive
 START
 Obsidian - Question
-Question: Quel empire Napoléon a-t-il fondé ?
-Réponse: Le Premier Empire français
+Question: Quelle bataille a marqué la défaite finale de [[Napoleon Bonaparte|Napoléon]] ?
+Réponse: La [[Battle of Waterloo|Bataille de Waterloo]]
 END
 
-> [!flashcard]- Début de la campagne de Russie
+> [!flashcard]- Campagne de Russie
 START
 Obsidian - Question
-Question: Quelle année marque le début de la campagne de Russie par Napoléon ?
+Question: Quelle année marque le début de la campagne de Russie par [[Napoleon Bonaparte|Napoléon]] ?
 Réponse: 1812
+END
+
+> [!flashcard]- Naissance de Napoléon
+START
+Obsidian - Question
+Question: En quelle année [[Napoleon Bonaparte|Napoléon]] est-il né ?
+Réponse: 1769
 END
 ```
 
@@ -117,9 +123,9 @@ END
 
 ### Additional Considerations:
 
-- **Ensure Accurate Backlinks**: Only link Wikipedia articles in the Summary and Chronology sections when relevant, and ensure the linked text exactly matches the Wikipedia page title.  
-- **Clarity and Consistency**: Maintain logical organization throughout the note, ensuring timelines, summaries, and flashcards are consistent with historical sources.  
-- **SuperMemo Principles**: Flashcards should follow SuperMemo's best practices, focusing on clarity and simplicity.  
-- **Language Precision**: All flashcard content must be in French, with correct syntax and vocabulary.
+- **Language and Context**: All sections except the flashcards must be in English, while flashcards must be in French.  
+- **Backlinks Integration**: Use backlinks in the **Summary**, **Chronology**, and **Flashcards**. In French flashcards, format backlinks properly when the displayed text differs from the page name. Don't forget to capitalize backlinks. Ensure consistency between all backlinks in the note.
+- **Consistency and Accuracy**: Ensure that all historical dates, names, and events match reliable sources and align with Wikipedia page titles.
+- **Flashcard Precision**: Follow SuperMemo principles to ensure clarity and focus for effective learning.
 
-By following these guidelines, you’ll produce a comprehensive, structured note suitable for both quick reference and study in Obsidian.
+This structure ensures the note is well-organized, contextually rich, and optimized for knowledge retention in Obsidian.
