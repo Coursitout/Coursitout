@@ -48,7 +48,6 @@ Obsidian - Question
 Question: [Insert atomic question here] 
 Answer: [Insert direct answer here] 
 Wikipedia: [Insert English Wikipedia URL here] 
-ID: 1773586987108
 END
 
 ### Example of Atomicity
@@ -65,5 +64,4 @@ Obsidian - Question
 Question: What condition does Lorem ipsum dolor sit amet cause?
 Answer: Consectetur adipiscing elit
 Wikipedia: https://en.wikipedia.org/wiki/Lorem_ipsum
-ID: 1773586987112
 END
