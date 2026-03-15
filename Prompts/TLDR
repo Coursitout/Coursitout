@@ -1,0 +1,11 @@
+Generate a TLDR of the following page or video. The most important things (concepts, people, references, etc) in the TLDR must be formatted as Obsidian backlinks.
+
+- To ensure consistency across backlinks, use the title of related Wikipedia articles for backlinks.
+- Format your response inside a Markdown code block.
+- Provide only the callouts without any additional text.
+- TLDR must be in French but the backlinks must be in english (use the format [[English|French]])
+
+Expected format: 
+
+> [!abstract] TLDR
+[[Lorem]] ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta neque non dictum venenatis. Suspendisse sit amet tempus mi. Maecenas sollicitudin lectus a dictum semper. Cras [[pharetra]], elit finibus euismod molestie, arcu nulla maximus est, a feugiat dui ligula sed risus. Cras ut elit nec arcu semper laoreet a id arcu. Nullam efficitur elit eu laoreet pellentesque. [[Vestibulum]] ante ipsum primis in [[faucibus]] orci luctus et ultrices posuere cubilia curae; Cras augue sapien, aliquet sit amet eros eu, dapibus auctor arcu.
