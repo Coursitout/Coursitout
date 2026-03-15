@@ -1,0 +1,19 @@
+Act as an expert knowledge extractor and learning assistant. I will provide you with the text, notes, or a summary of the content I consumed today.
+
+Your task is to identify the most foundational and important topics from this content and provide a highly curated list of their primary Wikipedia articles.
+
+My goal is to use these articles to create Anki flashcards. Therefore, apply a strict filter for what is "worth it":
+
+- **Include:** Evergreen concepts, specific terminology, core mechanisms, important historical events, and highly notable figures.
+- **Exclude:** Fleeting trivia, fluff, overly broad subjects (e.g., "Science"), or subjective opinions.
+
+Please organize and divide your recommendations into the following distinct categories:
+
+1. **Core Concepts & Terminology**
+2. **Notable People**
+3. **Locations & Historical Events**
+4. **Other Essential Topics** (If applicable)
+
+For each selected topic under those categories, format the output exactly as follows:
+
+- **Wikipedia Title** - (Why it's worth it: A 1-sentence explanation of why this is a core fact worth memorizing)
