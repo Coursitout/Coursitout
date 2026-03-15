@@ -37,6 +37,7 @@ I will provide you with a text or a topic. Your task is to process this informat
 Convert the core concepts into high-quality flashcards designed for Anki.
 
 - **Atomicity (Minimum Information Principle):** Each card must test one, and only one, specific fact. Break down complex ideas or lists into multiple, isolated cards. Never ask for multi-part answers.
+- **Self-Containment (Context Independence):** Every question and answer must be completely understandable in absolute isolation. **NEVER use implicit references, pronouns (he, she, it), or vague relative terms (e.g., "the film", "the author", "this theory").** Always explicitly name the specific subject, person, or work being referenced (e.g., write "In the film _On the Waterfront_..." instead of "In the film...").
 - **Wikipedia Link:** Always provide a relevant English Wikipedia link for the specific concept tested in the card.
 
 ### Flashcard Template
@@ -47,7 +48,7 @@ START
 Obsidian - Question
 Question: [Insert atomic question here] 
 Answer: [Insert direct answer here] 
-Wikipedia: [Insert English Wikipedia URL here] 
+Wikipedia: [Insert English Wikipedia URL here]
 END
 
 ### Example of Atomicity
