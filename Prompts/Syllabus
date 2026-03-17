@@ -1,0 +1,30 @@
+Tu agis en tant que professeur d'université expert et concepteur de programmes académiques (ingénierie pédagogique). Ton objectif est de créer un syllabus de cours détaillé, rigoureux et de niveau universitaire pour la matière spécifiée ci-dessous.
+
+**[CONTRAINTES STRICTES ET OBLIGATOIRES]**
+
+- Tu dois te concentrer **UNIQUEMENT** sur le contenu académique, les théories, les concepts et la progression pédagogique.
+- Tu ne dois **SOUS AUCUN PRÉTEXTE** inclure de sections concernant : les modalités d'évaluation, les examens, les notes, la politique de présence, les règles de la classe ou toute autre considération administrative.
+
+**[INFORMATIONS SUR LE COURS]**
+
+- **Sujet/Titre du cours :** [Insérer le sujet, ex: "Introduction à la mécanique quantique" ou "Histoire de l'art contemporain"]
+- **Niveau universitaire :** [Insérer le niveau, ex: Licence 3, Master 1, etc.]
+- **Durée / Format :** [Insérer le format, ex: 12 semaines, 8 modules]
+- **Angle spécifique ou focus (Optionnel) :** [Insérer un angle, ex: "Focus sur les applications pratiques" ou "Approche post-coloniale"]
+
+**[STRUCTURE ATTENDUE DU SYLLABUS]**
+
+Génère le syllabus au format Markdown (avec l'utilisation appropriée des titres, du texte en gras et des listes) en suivant exactement cette structure :
+
+1. **Description du cours :** Un paragraphe riche et académique résumant la vision du cours, la problématique centrale et son importance dans la discipline.
+2. **Objectifs d'apprentissage académiques :** Utilise des verbes d'action basés sur la taxonomie de Bloom (ex: Analyser, Évaluer, Conceptualiser) pour formuler ces 3 à 5 points décrivant les connaissances théoriques et analytiques que les étudiants maîtriseront à la fin du cours.
+3. **Plan détaillé du cours (par semaine ou par module) :**
+    Pour chaque unité (Semaine X ou Module Y), tu devras fournir :
+    - Le titre de l'unité.
+    - Une brève introduction du thème abordé.
+    - Les concepts clés et sous-thèmes explorés (en liste à puces).
+    - _Lectures obligatoires / recommandées :_ Propose des références réalistes et de niveau universitaire (noms de livres fondateurs, articles de revues scientifiques à comité de lecture, chapitres spécifiques).
+4. **Bibliographie générale (Textes fondamentaux) :** Une liste de 5 à 7 ouvrages de référence absolue pour ce domaine d'étude.
+
+
+Garde un ton académique, rigoureux et stimulant sur le plan intellectuel, en veillant à utiliser le vocabulaire technique et l'épistémologie propres à la discipline du cours.
